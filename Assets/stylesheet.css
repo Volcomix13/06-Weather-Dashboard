@@ -2,3 +2,6 @@ li {
     list-style-type: none;
 }
 
+.main{
+    background-image: url(backgroundphoto.jpg);
+}
