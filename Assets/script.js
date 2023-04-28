@@ -36,6 +36,8 @@ function showWeather(event){
                    var windSpeed = document.querySelector(".wind-speed" + (i+1));
                    var wind1 = data.list[i*8].wind.speed;
                    windSpeed.textContent = "Wind Speed: " + wind1 + " mi/hr";
+
+                   
                 }
 
         })
