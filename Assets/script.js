@@ -13,7 +13,7 @@ function showWeather(event){
   
     var city = inputCity.value;
 
-    var queryURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=" + APIKey + "&units=imperial";
+    var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=" + APIKey + "&units=imperial";
         fetch (queryURL)
             .then(function(response) {
                 return response.json();
@@ -36,9 +36,6 @@ function showWeather(event){
                    var windSpeed = document.querySelector(".wind-speed" + (i+1));
                    var wind1 = data.list[i*8].wind.speed;
                    windSpeed.textContent = "Wind Speed: " + wind1 + " mi/hr";
-
-                   
-
                 }
 
         })
